@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irfan Ullah | Web Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .btn-primary {
+            background-color: #764ba2;
+            border-color: #764ba2;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #5a3d89;
+        }
+        .code-snippet {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+        .profile-img {
+            border-radius: 50%;
+            border: 6px solid #ffffff;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-3xl font-bold text-gray-800">Irfan Ullah</div>
+            <div>
+                <a href="#about" class="text-gray-600 hover:text-purple-600 mx-4">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-purple-600 mx-4">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-purple-600 mx-4">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-purple-600 mx-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="gradient-bg text-white py-40">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <img src="images/irfan.jpeg" alt="Irfan Ullah" class="profile-img mx-auto mb-6">
+            <h1 class="text-5xl font-extrabold mb-6">I’m Irfan Ullah</h1>
+            <p class="text-2xl">A Web Developer Specialized in Modern Web Technologies</p>
+            <div class="mt-8">
+                <a href="#projects" class="btn-primary px-8 py-4 rounded-full font-bold">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed text-center">
+                <p>I'm a passionate web developer with expertise in HTML, CSS, JavaScript, Tailwind CSS, MySQL, PHP, and Drupal. 
+                I enjoy building modern, responsive, and user-friendly websites that help businesses grow and succeed online. 
+                With a focus on clean code and innovative solutions, I strive to create web applications that are not only functional but also visually appealing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- HTML & CSS -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">HTML & CSS</h3>
+                    <p class="text-gray-600 mb-4">Building the structure and style of web pages with semantic HTML and modern CSS techniques, including responsive design.</p>
+                    <div class="code-snippet">
+                        <pre><code>&lt;div class="container mx-auto"&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- JSON -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">JSON</h3>
+                    <p class="text-gray-600 mb-4">Working with JSON data for APIs and configuration, using it to structure and transfer data effectively.</p>
+                    <div class="code-snippet">
+                        <pre><code>{
+    "name": "Irfan Ullah",
+    "skills": ["HTML", "CSS", "JavaScript"]
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Tailwind CSS</h3>
+                    <p class="text-gray-600 mb-4">Utilizing the utility-first framework to rapidly build modern and responsive user interfaces with consistency.</p>
+                    <div class="code-snippet">
+                        <pre><code>&lt;button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"&gt;
+    Click me
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- PHP -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">PHP</h3>
+                    <p class="text-gray-600 mb-4">Developing dynamic web applications and server-side scripts using PHP, handling backend logic and database interactions.</p>
+                    <div class="code-snippet">
+                        <pre><code>&lt;?php
+echo "Hello, World!";
+?&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Drupal -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Drupal</h3>
+                    <p class="text-gray-600 mb-4">Building and theming content-rich websites using Drupal, with a focus on customization and scalability.</p>
+                    <div class="code-snippet">
+                        <pre><code>&lt;?php
+function mytheme_preprocess_page(&$variables) {
+    // Custom Drupal theming logic here.
+}
+?&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-200 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="images/pro1.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">School Management System</h3>
+                        <p class="text-gray-600 mb-4">A brief description of the project. Include the technologies used, the purpose, and any standout features.</p>
+                        <a href="#" class="text-purple-600 hover:underline">View Project</a>
+                    </div>
+                </div>
+                <!-- Repeat similar blocks for more projects -->
+                 
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center mb-12">Get In Touch</h2>
+            <form class="max-w-2xl mx-auto">
+                <div class="mb-6">
+                    <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                    <input type="text" id="name" class="w-full p-4 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-purple-600">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                    <input type="email" id="email" class="w-full p-4 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-purple-600">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                    <textarea id="message" rows="5" class="w-full p-4 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn-primary px-8 py-4 rounded-full font-bold">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Irfan Ullah. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="https://www.linkedin.com/in/irfan-ullah-198169261/" class="text-purple-500 mx-2">LinkedIn</a>
+                <a href="#" class="text-purple-500 mx-2">GitHub</a>
+                <a href="#" class="text-purple-500 mx-2">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
